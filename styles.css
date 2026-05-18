@@ -263,6 +263,49 @@ body {
   height: auto;
 }
 
+.matlab-subsection {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.project-image-grid + .matlab-subsection,
+.matlab-image-grid + .matlab-subsection {
+  margin-top: 2rem;
+}
+
+.project-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.matlab-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-image-grid .project-detail-figure,
+.matlab-image-grid .project-detail-figure {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .matlab-image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-image-grid,
+  .matlab-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-detail-title {
   margin: 0 0 0.75rem;
   font-size: 1.75rem;
@@ -273,6 +316,34 @@ body {
   margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.pdf-section {
+  margin-top: 2.5rem;
+}
+
+.pdf-section-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pdf-section-note {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.pdf-section-note a {
+  color: var(--text);
+}
+
+.pdf-embed {
+  display: block;
+  width: 100%;
+  height: min(70vh, 36rem);
+  border: 1px solid var(--border);
+  background: var(--sidebar-bg);
 }
 
 .page:has(#panel-projects.tab-panel:not(.is-hidden)) {
@@ -334,6 +405,10 @@ body {
 
 .page:has(#panel-classes.tab-panel:not(.is-hidden)) {
   width: min(100% - 2rem, 64rem);
+}
+
+.page:has(#panel-matlab.tab-panel:not(.is-hidden)) {
+  width: min(100% - 2rem, 72rem);
 }
 
 @media (max-width: 720px) {
