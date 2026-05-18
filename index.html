@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style = "background-color: lightsteelblue">
+    
+    <header style = "background-color: steelblue" class="top-banner">Katherine Jankowski</header>
+    <div class="layout">
+      <aside style = "background-color: #7BA3C9" class="sidebar" aria-label="Site sections">
+        <nav class="sidebar-tabs" role="tablist" aria-orientation="vertical">
+          <button
+            type="button"
+            class="sidebar-tab"
+            role="tab"
+            id="tab-home"
+            aria-selected="true"
+            aria-controls="panel-home"
+            tabindex="0"
+          >
+            Home
+          </button>
+          <button
+            type="button"
+            class="sidebar-tab"
+            role="tab"
+            id="tab-projects"
+            aria-selected="false"
+            aria-controls="panel-projects"
+            tabindex="-1"
+          >
+            projects
+          </button>
+          <button
+            type="button"
+            class="sidebar-tab"
+            role="tab"
+            id="tab-classes"
+            aria-selected="false"
+            aria-controls="panel-classes"
+            tabindex="-1"
+          >
+            classes
+          </button>
+          <button
+            type="button"
+            class="sidebar-tab"
+            role="tab"
+            id="tab-matlab"
+            aria-selected="false"
+            aria-controls="panel-matlab"
+            tabindex="-1"
+          >
+            MATLAB
+          </button>
+        </nav>
+      </aside>
+
+      <div class="main-area">
+        <main class="page">
+          <div class="panels">
+            <section
+              class="tab-panel"
+              id="panel-home"
+              role="tabpanel"
+              aria-labelledby="tab-home"
+            >
+              <h1 class="title">Katherine Jankowski</h1>
+              <div class="home-row">
+                <div class="home-text">
+                  <h2 class="about-heading">About</h2>
+                  <p class="intro">
+                    I am a junior at MIT studying Mechanical Engineering and
+                    Physics, and I'm on the Women's Lightweight Crew Team. When
+                    I'm not on the water or studying, I enjoy running, reading, biking,
+                    playing piano, and making lattes.
+                  </p>
+                </div>
+                <figure class="home-photo">
+                  <!-- Change src to your image path (e.g. images/profile.jpg) -->
+                  <img
+                    src="/Users/katherinejankowski/Downloads/DSCN0408.png"
+                    alt="Katherine Jankowski"
+                    width="600"
+                    height="800"
+                  />
+                </figure>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel is-hidden"
+              id="panel-projects"
+              role="tabpanel"
+              aria-labelledby="tab-projects"
+              hidden
+            >
+              <h2 class="panel-heading panel-heading--proper">Projects</h2>
+              <p class="project-intro">
+                Click a card to open that project’s detail page. Swap images,
+                titles, and copy for your own work.
+              </p>
+              <ul class="project-grid">
+                <li>
+                  <a class="project-card" href="projects/project-01.html">
+                    <div class="project-card-image">
+                      <img
+                        src="images/projects/project-01.svg"
+                        alt=""
+                        width="480"
+                        height="300"
+                      />
+                    </div>
+                    <div class="project-card-body">
+                      <h3 class="project-card-title">Sample project one</h3>
+                      <p class="project-card-desc">
+                        Short description of the project — tools, topic, or
+                        outcome in one or two lines.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="project-card" href="projects/project-02.html">
+                    <div class="project-card-image">
+                      <img
+                        src="images/projects/project-02.svg"
+                        alt=""
+                        width="480"
+                        height="300"
+                      />
+                    </div>
+                    <div class="project-card-body">
+                      <h3 class="project-card-title">Sample project two</h3>
+                      <p class="project-card-desc">
+                        Another placeholder card. Copy a full card block in the
+                        HTML to add more projects to the grid.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="project-card" href="projects/project-03.html">
+                    <div class="project-card-image">
+                      <img
+                        src="images/projects/project-03.svg"
+                        alt=""
+                        width="480"
+                        height="300"
+                      />
+                    </div>
+                    <div class="project-card-body">
+                      <h3 class="project-card-title">Sample project three</h3>
+                      <p class="project-card-desc">
+                        Replace these SVG thumbnails with your own JPG or PNG
+                        files in the images folder.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="tab-panel is-hidden"
+              id="panel-classes"
+              role="tabpanel"
+              aria-labelledby="tab-classes"
+              hidden
+            >
+              <h2 class="panel-heading panel-heading--proper">Classes</h2>
+
+              <div class="classes-list">
+                <div class="classes-year-row">
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Junior Fall</h3>
+                    <ul>
+                      <li><span class="course-number">2.71</span> Optics</li>
+                      <li><span class="course-number">2.004</span> Dynamics &amp; Controls II</li>
+                      <li><span class="course-number">8.041</span> Quantum Physics I</li>
+                      <li><span class="course-number">2.671</span> Measurement and Instrumentation</li>
+                      <li><span class="course-number">8.225</span> Physics in the 20th Century</li>
+                    </ul>
+                  </section>
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Junior Spring</h3>
+                    <ul>
+                      <li><span class="course-number">2.006</span> Thermal-Fluids Engineering II</li>
+                      <li><span class="course-number">2.008</span> Design &amp; Manufacturing II</li>
+                      <li><span class="course-number">8.044</span> Statistical Physics</li>
+                      <li><span class="course-number">16.36</span> Communication Networks and Systems</li>
+                      <li><span class="course-number">3.985</span> Archaeological Science</li>
+                    </ul>
+                  </section>
+                </div>
+
+                <div class="classes-year-row">
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Sophomore Fall</h3>
+                    <ul>
+                      <li><span class="course-number">2.003</span> Dynamics &amp; Controls I</li>
+                      <li><span class="course-number">8.03</span> Waves &amp; Vibrations</li>
+                      <li><span class="course-number">2.086</span> Numerical Computation for Mechanical Engineers</li>
+                      <li><span class="course-number">2.678</span> Electronics for Mechanical Systems</li>
+                      <li><span class="course-number">17.57</span> 20th Century Ukraine and Russia</li>
+                    </ul>
+                  </section>
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Sophomore Spring</h3>
+                    <ul>
+                      <li><span class="course-number">2.005</span> Thermal-Fluids Engineering I</li>
+                      <li><span class="course-number">2.007</span> Design &amp; Manufacturing I</li>
+                      <li><span class="course-number">2.002</span> Mechanics &amp; Materials II</li>
+                      <li><span class="course-number">14.02</span> Principles of Macroeconomics</li>
+                    </ul>
+                  </section>
+                </div>
+
+                <div class="classes-year-row">
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Freshman Fall</h3>
+                    <ul>
+                      <li><span class="course-number">8.01</span> Physics I (Mechanics)</li>
+                      <li><span class="course-number">18.02</span> Multivariable Calculus</li>
+                      <li><span class="course-number">3.091</span> Introduction to Solid-State Chemistry</li>
+                      <li><span class="course-number">6.100A</span> Introduction to Computer Science Programming in Python</li>
+                      <li><span class="course-number">21W.035</span> Elements of Science Writing for the Public</li>
+                    </ul>
+                  </section>
+                  <section class="classes-term">
+                    <h3 class="classes-term-title">Freshman Spring</h3>
+                    <ul>
+                      <li><span class="course-number">8.02</span> Physics II (Electricity and Magnetism)</li>
+                      <li><span class="course-number">18.03</span> Differential Equations</li>
+                      <li><span class="course-number">2.001</span> Mechanics &amp; Materials I</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="tab-panel is-hidden"
+              id="panel-matlab"
+              role="tabpanel"
+              aria-labelledby="tab-matlab"
+              hidden
+            >
+              <h2 class="panel-heading">MATLAB</h2>
+              <p class="panel-text">
+                Add MATLAB scripts, figures, or documentation here.
+              </p>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text">© 2026 Katherine Jankowski</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
